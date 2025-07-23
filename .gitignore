@@ -1,0 +1,32 @@
+# Training files and directories
+Tokenization/data/train.de
+Tokenization/data/train.en
+*.de
+*.en
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+ibm-ai-venv/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Cache directories
+.cache/
+.ruff_cache/
