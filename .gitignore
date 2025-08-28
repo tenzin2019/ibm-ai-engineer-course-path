@@ -30,3 +30,11 @@ ibm-ai-venv/
 # Cache directories
 .cache/
 .ruff_cache/
+
+# Results
+results/
+
+# Trained models
+trained_model/
+*.txt
+
