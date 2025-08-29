@@ -38,3 +38,7 @@ results/
 trained_model/
 *.txt
 
+# Vector cache
+.vector_cache/
+
+
