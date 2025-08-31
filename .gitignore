@@ -1,3 +1,9 @@
+# Training files and directories
+Tokenization/data/train.de
+Tokenization/data/train.en
+*.de
+*.en
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -128,6 +134,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+# Virtual environments
 .env
 .venv
 env/
@@ -192,3 +199,24 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Project-specific ignores
+ibm-ai-venv/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Cache directories
+.cache/
+
+# Results
+results/
+
+# Trained models
+trained_model/
+*.txt
+
+# Vector cache
+.vector_cache/
