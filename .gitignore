@@ -220,3 +220,6 @@ trained_model/
 
 # Vector cache
 .vector_cache/
+
+# model
+*.pt
