@@ -230,3 +230,7 @@ trained_model/
 
 # model
 *.pt
+
+#Training files
+*.json
+*.json.*
