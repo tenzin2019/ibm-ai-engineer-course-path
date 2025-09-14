@@ -236,4 +236,5 @@ trained_model/
 *.json
 *.json.*
 
-
+#grado
+*.gradio/
