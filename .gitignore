@@ -51,7 +51,7 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
-*.coverƒ
+
 *.py,cover
 .hypothesis/
 .pytest_cache/
@@ -210,7 +210,7 @@ ibm-ai-venv/
 
 # Cache directories
 .cache/
-model_cache/
+
 
 # Results
 results/
@@ -232,9 +232,3 @@ trained_model/
 # model
 *.pt
 
-#Training files
-*.json
-*.json.*
-
-#grado
-*.gradio/
