@@ -2,7 +2,19 @@
 
 ## 📚 Overview
 
-Part 2 of the IBM AI Engineer course focuses on advanced Natural Language Processing (NLP) techniques, transformer architectures, and modern deep learning approaches for language understanding and generation. This section covers everything from basic tokenization to fine-tuning large language models.
+Part 2 of the IBM AI Engineer course focuses on advanced Natural Language Processing (NLP) techniques, transformer architectures, and modern deep learning approaches for language understanding and generation. This comprehensive section covers everything from basic tokenization to building production-ready RAG applications with advanced fine-tuning techniques.
+
+## 🗓️ Course Progression Timeline
+
+| Week | Lab | Focus Area | Key Deliverables |
+|------|-----|------------|------------------|
+| 1 | Lab 0-1 | Foundation | Tokenization & Data Processing |
+| 2 | Lab 2-3 | Neural Networks | Document Classification & Seq2Seq |
+| 3 | Lab 4-5 | Transformers | Attention & Pre-training |
+| 4 | Lab 6 | Fine-tuning | LoRA, QLoRA, Adapters |
+| 5 | Lab 7 | Advanced Fine-tuning | RLHF, DPO, Instruction Tuning |
+| 6 | Lab 8 | RAG Systems | LangChain & Retrieval |
+| 7 | Lab 9 | Final Project | Production RAG Application |
 
 ## 🎯 Learning Objectives
 
@@ -14,6 +26,10 @@ By completing Part 2, you will be able to:
 - Work with sequence-to-sequence models and Word2Vec
 - Pre-train and fine-tune transformer models
 - Use advanced techniques like LoRA, QLoRA, and adapters
+- Master advanced fine-tuning including instruction tuning, RLHF, and DPO
+- Build and deploy RAG (Retrieval-Augmented Generation) systems
+- Integrate LangChain for complex AI applications
+- Create production-ready AI applications with Gradio interfaces
 - Deploy and optimize transformer models for production
 
 ## 📁 Course Structure
@@ -164,6 +180,98 @@ By completing Part 2, you will be able to:
 - Soft prompt tuning
 - Model evaluation and deployment
 
+---
+
+### Lab 7: Advanced Fine-tuning Transformers
+**📂 Directory:** `Lab 7 - Advanced Fine Tuning Transformers/`
+
+**🎯 Objective:** Master advanced fine-tuning techniques including instruction tuning, RLHF, and DPO
+
+**📄 Contents:**
+- `0 Instruction Tunning.pdf` - Instruction tuning fundamentals
+- `1 Instruction fine-tuning-v1.ipynb` - Instruction-based fine-tuning implementation
+- `2 Best Practices for Instruction-Tuning Large Language Models | Coursera.pdf` - Best practices guide
+- `3 Reward Modeling and Response Eval.pdf` - Reward modeling concepts
+- `4 RewardTrainer-v1.ipynb` - Reward model training
+- `5 Log Dervative trick.pdf` - Mathematical foundations
+- `6 PPOTrainer-v1.ipynb` - Proximal Policy Optimization training
+- `7 Summary and Highlights | Coursera.pdf` - Course summary
+- `8 DPO Fine-Tuning-v1.ipynb` - Direct Preference Optimization
+- `9 Fine-Tune LLMs Locally with InstructLab.pdf` - Local fine-tuning with InstructLab
+- `10 Cheat Sheet- Generative AI Advanced Fine-Tuning for LLMs.pdf` - Quick reference
+- `11 Glossary- Generative AI Advance Fine-Tuning for LLMs.pdf` - Key terminology
+- `CodeAlpaca-20k.json` - Instruction dataset
+
+**🔧 Skills Covered:**
+- Instruction tuning and alignment
+- Reinforcement Learning from Human Feedback (RLHF)
+- Direct Preference Optimization (DPO)
+- Proximal Policy Optimization (PPO)
+- Reward modeling and evaluation
+- Advanced fine-tuning strategies
+- Local model training with InstructLab
+
+---
+
+### Lab 8: RAG Fundamentals
+**📂 Directory:** `Lab 8 RAG Fundamentals/`
+
+**🎯 Objective:** Master Retrieval-Augmented Generation (RAG) systems and LangChain integration
+
+**📄 Contents:**
+- `1 RAG-v1.ipynb` - RAG fundamentals and implementation
+- `2 RAG with Pytorch-v1.ipynb` - PyTorch-based RAG system
+- `3 In-Context Learning and Prompt Templates for Advanced AI.ipynb` - Prompt engineering
+- `4 IBM introduction to langchain-v1.ipynb` - LangChain introduction
+- `5 Summarize private documents using RAG LangChain and LLMs.ipynb` - Document summarization
+- `prompt-engineering-v1.ipynb` - Advanced prompt engineering
+- `Cheat Sheet.pdf` - Quick reference guide
+- `Reading-Glossary.pdf` - Comprehensive glossary
+- `companyPolicies*.txt` - Sample documents for RAG
+- `model_cache/` - Cached models (DPR encoders, GPT-2)
+
+**🔧 Skills Covered:**
+- Retrieval-Augmented Generation (RAG)
+- LangChain framework integration
+- Document processing and chunking
+- Vector databases and embeddings
+- Prompt engineering techniques
+- In-context learning
+- Document summarization with RAG
+- Dense Passage Retrieval (DPR)
+
+---
+
+### Lab 9: Final Project - Generative AI Applications
+**📂 Directory:** `Lab 9 - Final Project/`
+
+**🎯 Objective:** Build a complete RAG-based question-answering system using LangChain and watsonx
+
+**📄 Contents:**
+- `1 LangChain document loader.ipynb` - Document loading with LangChain
+- `2 LangChain text-splitter.ipynb` - Text chunking strategies
+- `3 Embed Documents Using watsonx's Embedding Model.pdf` - watsonx embedding guide
+- `4 Embed documents with watsonx s embedding.ipynb` - Document embedding implementation
+- `5 LangChain vector store.ipynb` - Vector store setup
+- `6 LangChain retriever.ipynb` - Retrieval system implementation
+- `7 Reading - Compare Fine-Tuning Using InstructLab with RAG.pdf` - Fine-tuning vs RAG comparison
+- `8 Gradio Setup and Tutorial.pdf` - Gradio interface guide
+- `8.1Gradio_Practice.py` - Gradio practice exercises
+- `9 Project Overview.pdf` - Complete project overview
+- `9.1 qabot.py` - Final Q&A bot implementation
+- `Cheat Sheet- Project- Generative AI Applications with RAG and LangChain.pdf` - Project reference
+- `Glossary.pdf` - Key terminology
+
+**🔧 Skills Covered:**
+- End-to-end RAG system development
+- LangChain framework mastery
+- watsonx integration
+- Document processing pipeline
+- Vector store management
+- Retrieval system optimization
+- Gradio web interface development
+- Production-ready AI application deployment
+
 ## 🛠️ Technical Requirements
 
 ### Prerequisites
@@ -181,6 +289,10 @@ pip install transformers datasets
 pip install trl accelerate
 pip install torchmetrics
 pip install sentencepiece tokenizers
+pip install langchain langchain-community
+pip install chromadb faiss-cpu
+pip install gradio
+pip install watsonx-ai
 ```
 
 ### Hardware Requirements
@@ -196,19 +308,38 @@ pip install sentencepiece tokenizers
 python -m venv ibm-ai-venv
 source ibm-ai-venv/bin/activate  # On Windows: ibm-ai-venv\Scripts\activate
 
-# Install dependencies
-pip install -r requirements.txt
+# Install core dependencies
+pip install torch torchvision torchtext
+pip install transformers datasets
+pip install trl accelerate
+pip install langchain langchain-community
+pip install gradio
+pip install watsonx-ai
 ```
 
-### 2. Data Preparation
-- Download required datasets (instructions in each lab)
-- Ensure sufficient disk space for model weights and datasets
-- Set up proper data paths in notebooks
+### 2. Quick Start Guide
+```bash
+# Clone and navigate to Part 2
+cd Part-2
 
-### 3. Model Training
+# Start with Lab 0 for an overview
+jupyter notebook "Lab 0 - GenAI Intro/Exploring Generative AI Libraries-v2.ipynb"
+
+# Follow the progression timeline above
+# Each lab builds upon previous concepts
+```
+
+### 3. Data Preparation
+- Download required datasets (instructions in each lab)
+- Ensure sufficient disk space for model weights and datasets (50GB+ recommended)
+- Set up proper data paths in notebooks
+- Configure API keys for watsonx (Lab 9)
+
+### 4. Model Training
 - Start with Lab 1 for foundational concepts
 - Progress through labs sequentially
 - Use provided pre-trained models for faster experimentation
+- Monitor GPU memory usage during training
 
 ## 📊 Key Concepts Covered
 
@@ -243,6 +374,20 @@ pip install -r requirements.txt
 - QLoRA (Quantized LoRA)
 - Adapter-based fine-tuning
 - Soft prompt tuning
+- Instruction tuning and alignment
+- Reinforcement Learning from Human Feedback (RLHF)
+- Direct Preference Optimization (DPO)
+- Proximal Policy Optimization (PPO)
+
+### 6. RAG and Advanced Applications
+- Retrieval-Augmented Generation (RAG)
+- LangChain framework integration
+- Document processing and chunking
+- Vector databases and embeddings
+- Dense Passage Retrieval (DPR)
+- In-context learning
+- Prompt engineering techniques
+- Production deployment with Gradio
 
 ## 🎓 Assessment & Evaluation
 
@@ -251,6 +396,9 @@ pip install -r requirements.txt
 - Language model implementation
 - Translation model training
 - Fine-tuned chatbot development
+- Advanced instruction-tuned models
+- RAG-based question-answering system
+- Production-ready AI application with Gradio interface
 
 ### Evaluation Metrics
 - Accuracy, Precision, Recall, F1-score
@@ -278,24 +426,36 @@ pip install -r requirements.txt
 - [HuggingFace Transformers](https://huggingface.co/docs/transformers/)
 - [PyTorch Documentation](https://pytorch.org/docs/)
 - [TRL Documentation](https://huggingface.co/docs/trl/)
+- [LangChain Documentation](https://python.langchain.com/docs/)
+- [Gradio Documentation](https://gradio.app/docs/)
+- [IBM watsonx Documentation](https://dataplatform.cloud.ibm.com/docs/)
 
 ### Research Papers
 - "Attention Is All You Need" - Transformer architecture
 - "BERT: Pre-training of Deep Bidirectional Transformers" - BERT paper
 - "LoRA: Low-Rank Adaptation of Large Language Models" - LoRA technique
+- "Training language models to follow instructions with human feedback" - RLHF paper
+- "Direct Preference Optimization: Your Language Model is Secretly a Reward Model" - DPO paper
+- "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" - RAG paper
 
 ### Community Resources
 - HuggingFace Hub for pre-trained models
 - Papers With Code for implementations
 - GitHub repositories for advanced techniques
+- LangChain Hub for prompt templates
+- Gradio Spaces for sharing applications
+- IBM watsonx Community for enterprise AI solutions
 
 ## 🎯 Next Steps
 
 After completing Part 2, you'll be ready to:
 - Deploy transformer models in production
-- Implement advanced NLP applications
+- Implement advanced NLP applications with RAG
+- Build enterprise-grade AI solutions with watsonx
+- Create interactive AI applications with Gradio
 - Contribute to open-source AI projects
 - Pursue specialized AI engineering roles
+- Lead AI product development teams
 
 ## 📞 Support
 
@@ -307,6 +467,23 @@ For technical support or questions:
 
 ---
 
+## 🏆 Course Completion
+
+Upon successful completion of all labs, you will have:
+
+- ✅ Mastered modern NLP and transformer architectures
+- ✅ Built production-ready AI applications
+- ✅ Implemented advanced fine-tuning techniques
+- ✅ Created RAG systems with LangChain
+- ✅ Deployed interactive AI interfaces with Gradio
+- ✅ Gained hands-on experience with enterprise AI tools
+
+## 🎓 Certification
+
+This course is part of the IBM AI Engineer Professional Certificate program. Complete all labs and assessments to earn your certification.
+
+---
+
 **Happy Learning! 🚀**
 
-*This course provides a comprehensive foundation in modern NLP and transformer technologies, preparing you for real-world AI engineering challenges.*
+*This comprehensive course provides a complete foundation in modern NLP and transformer technologies, preparing you for real-world AI engineering challenges and career advancement in the field of artificial intelligence.*
