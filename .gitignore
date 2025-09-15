@@ -232,3 +232,10 @@ trained_model/
 # model
 *.pt
 
+# Cache directories
+model_cache/
+.gradio/
+
+# Duplicate data files
+CodeAlpaca-20k.json.*
+
