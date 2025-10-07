@@ -8,3 +8,12 @@ client = ibm_watsonx_ai.Client(
 client.list_models()
 
 client.get_model(model_id="your_model_id")
+
+from langchain_ibm import WatsonxLLM
+
+model = WatsonxLLM(model=model)
+
+model.generate("What is the capital of France?")
+
+
+
